@@ -14,6 +14,11 @@ install-hadolint:
 	sudo wget -O /bin/hadolint https://github.com/hadolint/hadolint/releases/download/v2.7.0/hadolint-Linux-x86_64
 	sudo chmod +x /bin/hadolint
 	which hadolint
+	
+install-minikube:
+	cd /tmp && curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
+	sudo install /tmp/minikube-linux-amd64 /usr/local/bin/minikube
+	which minikube
 
 install:
 	# This should be run from inside a virtualenv
