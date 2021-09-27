@@ -29,7 +29,7 @@ You can find a detailed [project rubric, here](https://review.udacity.com/#!/rub
 
 ## Setup the Environment
 
-* Create a virtualenv and activate it
+* Create a virtualenv and activate it, this can be done using `make setup` then activate it using `source ~/.devops/bin/activate`
 * Run `make install` to install the necessary dependencies
 
 ### Running `app.py`
@@ -44,3 +44,8 @@ You can find a detailed [project rubric, here](https://review.udacity.com/#!/rub
 * Setup and Configure Kubernetes locally
 * Create Flask app in Container
 * Run via kubectl
+
+### Making Predictions
+
+1. Run the app using any of the above approaches
+2. Run `./make_prediction.sh`
