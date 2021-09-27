@@ -1,4 +1,8 @@
-<include a CircleCI status badge, here>
+<div align="right">
+<a href=https://circleci.com/gh/wils93/udacity_ml_microservice_prj4/tree/master>
+<img src=https://circleci.com/gh/wils93/udacity_ml_microservice_prj4/tree/master.svg?style=svg alt="CircleCI">
+</a>
+</div>
 
 ## Project Overview
 
