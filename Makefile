@@ -15,6 +15,13 @@ install-hadolint:
 	sudo chmod +x /bin/hadolint
 	which hadolint
 	
+install-k8s:
+	cd /tmp && curl -LO "https://dl.k8s.io/release/$(shell curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+	cd /tmp && sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
+	cd /tmp && chmod +x kubectl
+	mkdir -p ~/.local/bin/kubectl
+	cd /tmp && mv ./kubectl ~/.local/bin/kubectl
+
 install-minikube:
 	cd /tmp && curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
 	sudo install /tmp/minikube-linux-amd64 /usr/local/bin/minikube
