@@ -27,6 +27,10 @@ install-minikube:
 	sudo install /tmp/minikube-linux-amd64 /usr/local/bin/minikube
 	which minikube
 
+install-circleci:
+	curl -fLSs https://raw.githubusercontent.com/CircleCI-Public/circleci-cli/master/install.sh | sudo bash
+	which circleci
+
 install:
 	# This should be run from inside a virtualenv
 	pip install --upgrade pip &&\
